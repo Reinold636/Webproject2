@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}   
+
+header{
+    background: #7eaa92;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.nav-menu{
+    font-family:'Times New Roman', Times, serif;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    list-style: none;
+    gap: 50px;
+}
+
+.nav-menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.nav-menu a:hover{
+    color: #2e2222df;
+}  
+
+footer {
+  background-color: #88b19d;
+  color: white;
+  padding: 15px 15px;
+  margin-top: 200px;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-content p {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.social-media {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+.social-media li a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-media li a img:hover {
+  transform: scale(1.15);
+}
+
+@media only screen and (max-width: 768px) {
+  header{
+    display: none;
+  }
+  
+  .homepage-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-left, .box-right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 601px){
+  .homepage-content {
+    max-width: 1200px;
+    padding: 0 40px;
+  }
+
+  .box-left, .box-right {
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+.about-section {
+  background-color: #7eaa92;
+  padding: 40px;
+  max-width: 1100px;
+  margin: 50px auto;
+  border-radius: 15px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  margin-top: 150px;
+}
+
+.about-section h1 {
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.about-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.about-box:hover {
+  transform: translateY(-5px);
+}
+
+.about-box h2 {
+  color: #d65b5b;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.about-section .about-grid .about-box p {
+  font-size: 16px;
+  text-align: justify;
+}
+
